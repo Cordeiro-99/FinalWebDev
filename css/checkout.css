@@ -1,0 +1,61 @@
+/* Fundo geral com imagem e overlay escuro */
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/fundo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 80px; /* Ajusta a posição do conteúdo mais para baixo */
+}
+
+/* Caixa principal centralizada */
+.container {
+    max-width: 700px;
+    background-color: #1a75bb; /* Tom de azul mais suave e moderno */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Subtítulo e texto */
+p, h4 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Tabela responsiva */
+.table img {
+    border-radius: 10px;
+}
+.table {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Botões */
+form .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-right: 10px;
+}
+
+/* Alertas */
+.alert {
+    font-size: 0.95rem;
+    border-radius: 5px;
+}
+
+/* Responsivo */
+@media (max-width: 576px) {
+    .table img {
+        max-width: 100px;
+    }
+}

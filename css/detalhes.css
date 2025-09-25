@@ -1,0 +1,145 @@
+/* Layout base para fixar o footer no fundo */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #0d6efd; /* azul Bootstrap */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f8f9fa; /* texto claro para contrastar */
+}
+
+/* main deve crescer para ocupar o espaço restante */
+main {
+    flex: 1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Imagem do evento */
+.img-fluid {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+/* Descrição */
+.lead {
+    font-size: 1.1rem;
+    color: #e2e6ea;
+}
+
+/* Lista de informações do evento */
+.list-group-item {
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #f8f9fa;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Botão Voltar */
+.btn-secondary {
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Botão Adicionar ao Carrinho */
+form .btn-success {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #198754;
+    border: none;
+}
+
+form .btn-success:hover {
+    background-color: #157347;
+}
+
+/* Campo de quantidade */
+form input[type="number"] {
+    border-radius: 8px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+.custom-footer {
+    background-color: #1A1464; 
+    color: white;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #dcdcdc;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    form .btn-success {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    form input[type="number"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-fluid {
+        max-height: 250px;
+    }
+
+    .footer .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

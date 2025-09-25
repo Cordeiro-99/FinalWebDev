@@ -1,0 +1,83 @@
+  body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+
+.estado-pendente { 
+    color: orange; 
+    font-weight: bold; 
+}
+
+.estado-confirmado { 
+    color: green; 
+    font-weight: bold; 
+}
+
+.estado-cancelado { 
+    color: red; 
+    font-weight: bold; 
+}
+
+table { 
+    border-collapse: collapse; 
+    width: 100%; 
+    margin-bottom: 30px; 
+}
+
+th, td { 
+    border: 1px solid #ccc; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+th { 
+    background-color: #eee; 
+}
+
+form select { 
+    padding: 4px; 
+}
+
+form button { 
+    margin-left: 5px; 
+}
+
+.btn-primary {
+    padding: 5px 10px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.btn-navegacao {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-navegacao:hover {
+    background-color: #0056b3;
+}

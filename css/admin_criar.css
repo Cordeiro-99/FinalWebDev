@@ -1,0 +1,60 @@
+/* Estilo geral do corpo */
+body {
+    background-color: #f5f7fa;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #1a1464;
+    font-weight: 700;
+}
+
+/* Cartão de formulário */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Espaçamento dos rótulos */
+.form-label {
+    font-weight: 600;
+    color: #1a1464;
+}
+
+/* Inputs */
+.form-control:focus {
+    border-color: #1db4ff;
+    box-shadow: 0 0 0 0.2rem rgba(29, 180, 255, 0.25);
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #1a1464;
+    border-color: #1a1464;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #1db4ff;
+    border-color: #1db4ff;
+    color: #212226;
+}
+
+.btn-secondary {
+    font-weight: bold;
+}
+
+/* Mensagens de sucesso/erro */
+.alert {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Centraliza o conteúdo num ecrã largo */
+.container {
+    max-width: 700px;
+}

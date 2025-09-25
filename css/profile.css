@@ -1,0 +1,176 @@
+.profile-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    background: #2e2f33;
+    border-radius: 8px;
+    border: 1px solid #2a33b2;
+}
+
+h1, h2 {
+    color: #2a33b2;
+    text-align: center;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #212226;
+    color: #fff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.info-box {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #38393e;
+    border-radius: 6px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.btn, .logout {
+    background-color: #2a33b2;
+    color: #212226;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover, .logout:hover {
+    background-color: #1db4ff;
+}
+
+.compras {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.compras th, .compras td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+.compras th {
+    background-color: #3d3f45;
+    color: #1db4ff;
+}
+
+.compras tr:nth-child(even) {
+    background-color: #2a2b2f;
+}
+
+.mensagem-vazia {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    color: #ccc;
+}
+.edit-form {
+    background-color: #2e2f33;
+    border: 1px solid #2a33b2;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-top: 20px;
+    display: none;
+}
+
+.edit-form.visivel {
+    display: block;
+}
+
+.edit-form h3 {
+    color: #1db4ff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ddd;
+    font-weight: 500;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    background-color: #38393e;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.edit-form input:focus {
+    border-color: #1db4ff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(29, 180, 255, 0.3);
+}
+
+.edit-form .btn {
+    background-color: #1db4ff;
+    color: #212226;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-form .btn:hover {
+    background-color: #159bd8;
+}
+.edit-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Altura para centralizar verticalmente */
+}
+.custom-footer {
+    background-color: #1A1464; 
+    color: white; 
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.footer .social-icons a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #0d6efd;
+}
